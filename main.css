@@ -1,0 +1,55 @@
+
+
+
+body {
+    background-color:  #f0efef;
+}
+
+.headshot {
+    border-radius: 100px;
+}
+
+/* --------------------
+        NAV BAR
+---------------------- */
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li {
+    padding: 1em 2em;
+}
+
+li > a {
+    text-decoration: none;
+}
+
+/* --------------------
+        MAIN
+---------------------- */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.work {
+    border: 2px red solid;
+
+}
+
+.work > img {
+    max-width: 95%;
+    height: auto;
+}
+
+@media (min-width:600px) {
+    body {
+        background-color: lavender;
+    }
+}
