@@ -40,7 +40,8 @@ li > a {
 
 .work {
     border: 2px red solid;
-
+    width: 95%;
+    text-align: center;
 }
 
 .work > img {
