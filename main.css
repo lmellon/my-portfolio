@@ -9,6 +9,9 @@ body {
     border-radius: 100px;
 }
 
+a {
+    text-decoration: none;
+}
 /* --------------------
         NAV BAR
 ---------------------- */
@@ -43,11 +46,11 @@ li > a {
 ---------------------- */
 
 .project {
-    border: 2px red solid;
+    border-top: 2px red solid;
     width: 95%;
     text-align: center;
     margin: 1em 0;
-    padding: .25em 0;
+    padding: .5em 0;
 }
 
 .project-pics {
@@ -56,10 +59,54 @@ li > a {
     border: 0.5px solid black;
 }
 
+.site {
+    color: black;
+    padding: .5em 1em;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: .25em;
+}
+
+.github {
+    color: black;
+    padding: .5em 1em;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: .25em;
+}
 /* --------------------
         ABOUT
 ---------------------- */
+.resume {
+    color: black;
+    padding: .5em 1em;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    text-decoration: none;
+}
 
+/* --------------------
+        CONTACT
+---------------------- */
+.contact-ways {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.contact-option {
+    border: 1px solid black;
+    text-align: center;
+    padding: .5em;
+    margin: .5em;
+}
+
+/* --------------------
+    Large Screens
+---------------------- */
 @media (min-width:600px) {
     body {
         background-color: lavender;
