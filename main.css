@@ -16,7 +16,7 @@ a {
         NAV BAR
 ---------------------- */
 
-ul {
+.nav {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -79,12 +79,53 @@ li > a {
 /* --------------------
         ABOUT
 ---------------------- */
+.about {
+    text-align: center;
+    border: 2px red solid;
+    width: 95%;
+}
 .resume {
     color: black;
     padding: .5em 1em;
     border: 1px solid lightgray;
     border-radius: 3px;
     text-decoration: none;
+}
+
+.all-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fe-skills {
+    width: 49%;
+    text-align: left;
+    list-style: none;
+}
+
+.be-skills {
+    width: 49%;
+    text-align: left;
+    list-style: none;
+}
+
+.fe-skills li {
+  padding-left: 1rem;
+  margin: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.be-skills li {
+  padding-left: 1rem;
+  margin: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.skill-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
 }
 
 /* --------------------
@@ -94,7 +135,7 @@ li > a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+
 }
 
 .contact-option {
