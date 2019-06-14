@@ -38,16 +38,27 @@ li > a {
     align-items: center;
 }
 
-.work {
+/* --------------------
+        WORK
+---------------------- */
+
+.project {
     border: 2px red solid;
     width: 95%;
     text-align: center;
+    margin: 1em 0;
+    padding: .25em 0;
 }
 
-.work > img {
+.project-pics {
     max-width: 95%;
     height: auto;
+    border: 0.5px solid black;
 }
+
+/* --------------------
+        ABOUT
+---------------------- */
 
 @media (min-width:600px) {
     body {
