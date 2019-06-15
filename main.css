@@ -1,4 +1,8 @@
-
+body, html, ul, li {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
 
 
 body {
@@ -23,11 +27,11 @@ a {
     justify-content: center;
 }
 
-li {
+.nav > li {
     padding: 1em 2em;
 }
 
-li > a {
+.nav > li > a {
     text-decoration: none;
 }
 
@@ -95,37 +99,51 @@ li > a {
 .all-skills {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.skills-title {
+    background-color: yellow;
+}
+
+.skills-title h4 {
+    padding: 1em;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.skills-table {
+    list-style: none;
+    text-align: left;
 }
 
 .fe-skills {
-    width: 49%;
     text-align: left;
-    list-style: none;
 }
 
 .be-skills {
-    width: 49%;
     text-align: left;
-    list-style: none;
 }
 
 .fe-skills li {
-  padding-left: 1rem;
-  margin: 0.25rem;
-  font-size: 1.5rem;
+  padding-left: 1.5em;
+  margin: 0.25em;
+  font-size: 1.5em;
 }
 
 .be-skills li {
-  padding-left: 1rem;
-  margin: 0.25rem;
-  font-size: 1.5rem;
+  padding-left: 1.5em;
+  margin: 0.25em;
+  font-size: 1.5em;
 }
 
 .skill-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 1rem;
+  width: 25px;
+  height: 25px;
+  margin-right: 1em;
 }
 
 /* --------------------
@@ -151,5 +169,26 @@ li > a {
 @media (min-width:600px) {
     body {
         background-color: lavender;
+    }
+
+    /* --------------------
+            ABOUT
+    ---------------------- */
+    .all-skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .fe-skills {
+        width: 45%;
+        border: 1px green solid;
+    }
+
+    .be-skills {
+        width: 45%;
+        border: 1px green solid;
     }
 }
