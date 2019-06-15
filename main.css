@@ -85,7 +85,7 @@ a {
 ---------------------- */
 .about {
     text-align: center;
-    border: 2px red solid;
+    /* border: 2px red solid; */
     width: 95%;
 }
 .resume {
@@ -102,7 +102,7 @@ a {
     justify-content: space-around;
     width: 90%;
     margin: 0 auto;
-    
+
 }
 
 .skills-title {
@@ -151,7 +151,7 @@ a {
 ---------------------- */
 .contact-ways {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 
 }
@@ -190,5 +190,27 @@ a {
     .be-skills {
         width: 45%;
         border: 1px green solid;
+    }
+
+    /* --------------------
+            CONTACT
+    ---------------------- */
+    .contact {
+        width: 90%;
+    }
+
+    .contact-ways {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .contact-option {
+        border: 1px solid black;
+        text-align: center;
+        padding: 1em;
+        margin: .5em;
+        width: 20%;
     }
 }
