@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="portfolio.js" charset="utf-8"></script>
     <title>Lauren Mellon Portfolio</title>
 </head>
 <body>
@@ -27,9 +28,22 @@
             <h2 id="work">My Work</h2>
             <div class="project">
                 <h3>REUSE</h3>
-                <img class="project-pics" src="images/REUSE.png" alt="REUSE App"><br>
-                <img class="project-pics" src="images/REUSE-item.png" alt="REUSE item">
-                <p>Technologies: JavaScript, Node.js, EJS, Express, Mongoose, MongoDB, CSS</p>
+                <div class="pic-container">
+                    <div class="pictures">
+                        <img class="project-pics" src="images/REUSE.png" alt="REUSE App">
+                    </div>
+                    <div class="pictures">
+                        <img class="project-pics" src="images/REUSE-item.png" alt="REUSE item">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+                <p class="tech">Technologies: JavaScript, Node.js, EJS, Express, Mongoose, MongoDB, CSS</p>
                 <p>REUSE is a web application that allows users to buy and/or sell used shoes and clothing. They can create, update or delete listings. Users also have the opportunity to learn more about textile waste when clicking on the links in the homepage.</p>
                 <a class="site" href="https://crud-app-ecommerce.herokuapp.com/" target="_blank">Visit Live Site</a>
                 <a  class="github" href="https://github.com/lmellon/CRUD-app" target="_blank"><i class='fab fa-github'></i>View on GitHub</a>
@@ -38,7 +52,7 @@
                 <h3>Travel{err}</h3>
                 <img class="project-pics" src="images/Travel{err}1.png" alt="Travel{err}1 App"><br>
                 <img class="project-pics" src="images/Travel{err}2.png" alt="Trave{err}2 App">
-                <p>Technologies: MongoDB, Mongoose, Express, Node.js, JavaScript, Angular, CSS</p>
+                <p class="tech">Technologies: MongoDB, Mongoose, Express, Node.js, JavaScript, Angular, CSS</p>
                 <p>Travel{err} is an application that allows guest users to search for travel destinations based on select criteria. It includes authentication which allows registered users to create the listings, and edit them as desired.</p>
                 <p>This app was built as a group project. We used a combination of paired and individual programming to complete this. My contributions included creating the flow chart and  mockup of our app, some of the styling, and participating in coding the functionality of the app as well.</p>
                 <a class="site" href="https://travelerr1.herokuapp.com/" target="_blank">Visit Live Site</a>
@@ -48,8 +62,8 @@
                 <h3>Open Ocean</h3>
                 <img class="project-pics" src="images/OpenOcean1.png" alt="OpenOcean1 App"><br>
                 <img class="project-pics" src="images/OpenOcean2.png" alt="OpenOcean2 App">
+                <p class="tech">Technologies: PostgreSQL, Ruby on Rails, React.</p>
                 <p>Open Ocean is a shared blogging app.  Users can read, and like other's entries.  They also have the ability to create and edit their own. The entries can be filtered to show only recent or archived based on their status and user preference.</p>
-                <p>This a full CRUD app built using React and Ruby on Rails. We created our own Rails API for the backend and connected it to our React frontend.</p>
                 <p>This app was built as a group project. My contributions included creating the React architecture of our app, and coding out the frontend. My partner coded out the backend and took care of most of the design.</p>
                 <a class="site" href="https://afternoon-brook-47049.herokuapp.com/" target="_blank">Visit Live Site</a>
                 <a class="github" href="https://github.com/lmellon/OpenOceanFE" target="_blank"><i class='fab fa-github'></i>View on GitHub</a>
@@ -61,7 +75,8 @@
             <img class="headshot" src="images/headshot.png" alt="Headshot">
             <div class="about-text">
                 <p>Why coding you ask? It offers the opportunity to virtually work with your hands, as well as a community of people who will never stop learning and growing. I enjoy working when I feel that my actions improve the experiences of others, or when I can contribute to helping other people improve their performance.</p>
-                <p>As a web developer, I am able to use a blend of core and technical skills. Communication, creativity, coaching, design, planing and problem solving are part of what makes this industry attractive to me.</p>
+                <p>As a web developer, I am able to use a blend of core and technical skills. Communication, creativity, coaching, design, planing and problem solving are part of what makes this industry enjoyable for me.</p>
+                <p>When I am not working, I am travelling, visiting with my friends and family, or spending time outside. I enjoy expereiencing new cultures, foods, and learning about others and their history.</p>
             </div>
             <div class="all-skills">
                 <div class="fe-skills">
@@ -93,6 +108,7 @@
                      </ul>
                    </div>
                  </div>
+                 <br>
             <a class="resume" href="#" target="_blank"><i class='fas fa-file-download' style='font-size:24px'></i> Download CV</a>
         </div>
         <!-- contact section -->
