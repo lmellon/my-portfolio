@@ -6,51 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mali|Merriweather|Ubuntu&display=swap" rel="stylesheet">
     <script src="portfolio.js" charset="utf-8"></script>
     <title>Lauren Mellon Portfolio</title>
 </head>
 <body>
     <!-- landing page -->
-    <div class="landing">
+    <div id="top" class="landing">
         <ul class="nav">
-            <li><a href="#work">MY WORK</a></li>
-            <li><a href="#about">ABOUT ME</a></li>
-            <li><a href="#contact">CONTACT ME</a></li>
+            <li><a href="#work" class="nav-links">MY WORK</a></li>
+            <li><a href="#about" class="nav-links">ABOUT ME</a></li>
+            <li><a href="#contact" class="nav-links">CONTACT ME</a></li>
         </ul>
         <img class="header-pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIoWmX4Ifw5ZspAhiEjwbcWDLT-KOa2VWAPyeN_h87T-1OUevK5g" alt="header pic">
     </div>
     <!-- info section -->
     <div class="title">
         <h1>Lauren Mellon</h1>
-        <h2>Web Developer</h2>
+        <h2>Full Stack Web Developer</h2>
     </div>
         <!-- work section -->
         <div class="work">
-            <h2 id="work">My Work</h2>
+            <h2 id="work" class="sections">// My Work </h2>
             <div class="project">
                 <h3>REUSE</h3>
-                <div class="pic-container">
-                    <!-- <div class="mySlides"> -->
-                        <img class="project-pics" src="images/REUSE.png" alt="REUSE App">
-                    <!-- </div>
-                    <div class="mySlides"> -->
-                        <img class="project-pics" src="images/REUSE-item.png" alt="REUSE item">
-                    <!-- </div> -->
-                    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br> -->
-                <!-- <div class="dots">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                </div> -->
-                <p class="tech">Technologies: JavaScript, Node.js, EJS, Express, Mongoose, MongoDB, CSS</p>
-                <p>REUSE is a web application that allows users to buy and/or sell used shoes and clothing. They can create, update or delete listings. Users also have the opportunity to learn more about textile waste when clicking on the links in the homepage.</p>
-                <a class="site" href="https://crud-app-ecommerce.herokuapp.com/" target="_blank">Visit Live Site</a>
-                <a  class="github" href="https://github.com/lmellon/CRUD-app" target="_blank"><i class='fab fa-github'></i>View on GitHub</a>
+                <br>
+                    <img class="project-pics" src="images/REUSE.png" alt="REUSE App">
+                    <img class="project-pics" src="images/REUSE-item.png" alt="REUSE item">
+                    <p class="tech">Technologies: JavaScript, Node.js, EJS, Express, Mongoose, MongoDB, CSS</p>
+                    <p>REUSE is a web application that allows users to buy and/or sell used shoes and clothing. They can create, update or delete listings. Users also have the opportunity to learn more about textile waste when clicking on the links in the homepage.</p>
+                    <a class="site" href="https://crud-app-ecommerce.herokuapp.com/" target="_blank">Visit Live Site</a>
+                    <a  class="github" href="https://github.com/lmellon/CRUD-app" target="_blank"><i class='fab fa-github'></i>View on GitHub</a>
             </div>
             <div class="project">
                 <h3>Travel{err}</h3>
+                <br>
                 <img class="project-pics" src="images/Travel{err}1.png" alt="Travel{err}1 App"><br>
                 <img class="project-pics" src="images/Travel{err}2.png" alt="Trave{err}2 App">
                 <p class="tech">Technologies: MongoDB, Mongoose, Express, Node.js, JavaScript, Angular, CSS</p>
@@ -60,7 +50,9 @@
                 <a class="github" href="https://github.com/saraweggs/Mean-Travel-App" target="_blank"><i class='fab fa-github'></i>View on GitHub</a>
             </div>
             <div class="project">
+                <p class="top"><a href="#">TOP <i class='fas fa-angle-up'></i></p>
                 <h3>Open Ocean</h3>
+                <br>
                 <img class="project-pics" src="images/OpenOcean1.png" alt="OpenOcean1 App"><br>
                 <img class="project-pics" src="images/OpenOcean2.png" alt="OpenOcean2 App">
                 <p class="tech">Technologies: PostgreSQL, Ruby on Rails, React.</p>
@@ -71,6 +63,7 @@
             </div>
             <div class="project">
                 <h3>Shoe2match</h3>
+                <br>
                 <img class="project-pics" src="images/Shoes2match1.png" alt="OpenOcean1 App"><br>
                 <img class="project-pics" src="images/Shoes2match2.png" alt="OpenOcean2 App">
                 <p class="tech">Technologies: MongoDB, Express, React, Node.js.</p>
@@ -82,7 +75,8 @@
         </div>
         <!-- about section -->
         <div class="about">
-            <h2 id="about">About Me</h2>
+            <p class="top"><a href="#">TOP <i class='fas fa-angle-up'></i></p>
+            <h2 id="about" class="sections"># About Me</h2>
             <img class="headshot" src="images/headshot.png" alt="Headshot">
             <div class="about-text">
                 <p>Why coding you ask? It offers the opportunity to virtually work with your hands, as well as a community of people who will never stop learning and growing. I enjoy working when I feel that my actions improve the experiences of others, or when I can contribute to helping other people improve their performance.</p>
@@ -120,24 +114,26 @@
                    </div>
                  </div>
                  <br>
-            <a class="resume" href="#" target="_blank"><i class='fas fa-file-download' style='font-size:24px'></i> Download CV</a>
+                 <br>
+            <button class="resume"><a href="#" target="_blank"><i class='fas fa-file-download' style='font-size:24px'></i> Download CV</a></button>
+            <br>
         </div>
         <!-- contact section -->
         <div class="contact">
-            <h2 id="contact">Contact Me</h2>
+            <p class="top"><a href="#">TOP <i class='fas fa-angle-up'></i></p>
+            <h2 id="contact" class="sections">/* Contact Me */</h2>
             <div class="contact-ways">
                 <div class="contact-option">
-                    <h4>GitHub</h4><a href="https://github.com/lmellon" target="_blank">lmellon</a>
+                    <h4 class="contact-types">GitHub</h4><a href="https://github.com/lmellon" target="_blank" class="contact-links">lmellon</a>
                 </div>
                 <div class="contact-option">
-                    <h4>Email</h4>
-                    <a href="<a href="mailto:laumellon@gmail.com" target="_blank">laumellon@gmail.com</a>
+                    <h4 class="contact-types">Email</h4>
+                    <a href="<a href="mailto:laumellon@gmail.com" target="_blank" class="contact-links">laumellon@gmail.com</a>
                 </div>
                 <div class="contact-option">
-                    <h4>Social</h4>
+                    <h4 class="contact-types">Social</h4>
                     <a href="https://www.linkedin.com/in/laurenmellon/" target="_blank"><i class='fab fa-linkedin' style='font-size:36px;color:blue'></i></a>
                     <a href="https://medium.com/@laumellon"><i class='fab fa-medium' style='font-size:36px'></i></a>
-                    <a href=""><i class='fab fa-instagram' style='font-size:36px'></i></a>
                 </div>
             </div>
         </div>
